@@ -1,0 +1,36 @@
+{
+  "name": "torvalds-ipsum",
+  "version": "1.0.0",
+  "description": "Lorem ipsum with Linus Torvalds quotes",
+  "main": "src/torvalds-ipsum.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-copy": "^1.0.1",
+    "gulp-live-server": "^0.0.31",
+    "gulp-minify": "^1.0.0"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiaguinho/torvalds-ipsum.git"
+  },
+  "keywords": [
+    "lorem",
+    "ipsum",
+    "linus",
+    "torvalds",
+    "funny"
+  ],
+  "author": "Tiago Temporin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiaguinho/torvalds-ipsum/issues"
+  },
+  "homepage": "https://github.com/tiaguinho/torvalds-ipsum#readme"
+}
