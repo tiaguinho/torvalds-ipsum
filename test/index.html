@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Torvalds Ipsum - Test</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2">
+                <button class="btn btn-primary" onclick="create_ipsum(1, 'result')">1</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary" onclick="create_ipsum(2, 'result')">2</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary" onclick="create_ipsum(3, 'result')">3</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary" onclick="create_ipsum(4, 'result')">4</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary" onclick="create_ipsum(5, 'result')">5</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary" onclick="create_ipsum(6, 'result')">6</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="content" id="result" style="white-space: pre-line;line-height: 20px;"></div>
+        </div>
+
+    </div>
+
+    <script type="application/javascript" src="js/lib.js"></script>
+    <script type="application/javascript">
+        function create_ipsum(limit, target) {
+            var ti = new TorvaldsIpsum();
+            var quotes = ti.get(limit);
+
+            var content = document.getElementById(target);
+            content.innerHTML = '';
+            for (var i = 0; i < quotes.length; i++) {
+                var p = document.createElement('p');
+                p.innerText = quotes[i];
+
+                content.append(p);
+            }
+        }
+    </script>
+</body>
+</html>
